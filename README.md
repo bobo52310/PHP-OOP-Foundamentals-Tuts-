@@ -50,3 +50,8 @@ private 成員，通常習慣在名稱開頭加上一個_(底線)來區別。
 * PHP Object copy 預設為 by reference。
 
 * 若是要 by value 需要使用 clone 指令。
+
+## Chapter 07 single responsibility principle
+依據 `single responsibility principle` (SRP,單一職責)
+每個 class 只負責一個職責而且職責必須要被封裝在這個 class 內， have only one reason to change
+原本在 User 內的 Validation 應該要抽出來，可以 reuse。
