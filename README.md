@@ -67,3 +67,23 @@ private 成員，通常習慣在名稱開頭加上一個_(底線)來區別。
 
 ## Chapter 09 autoloading through spl
 使用 `spl_autoload_register()` 註冊 load 方法，來達到 autoloading
+
+## Chapter 10 namespaces  命名空間
+PHP5.3才加入的功能，最主要的目的是用來組織類別與函數，並且避免名稱的衝突
+例如：
+`use Symfony\Component\Console\Input\ArrayInput;`
+
+表示使用 位在目錄 Symfony\Component\Console\內的檔名叫ArrayInput 的 class檔案
+
+使用 require 將檔案載進來，再配合 namespace\方法 (若有自動載入，就不需要再各自include了方便!)
+
+關鍵字 (keyword) `use` 可替過長的命名空間中的類別 (class) 取別名 (alias)
+
+例如：
+`use Name01\Name02\Name03\Demo as Another;`
+`__NAMESPACE__`   // 使用此魔術常數 取得目前的 namespace
+
+如果檔案沒有使用命名空間，則此檔內所有的 class、method 常數... 皆為全域
+要使用這些 全域 class、method 可使用 `\` 反斜線開頭，代表這是定義在`global namespace` 中的東西
+
+`\` 白話解釋就是從跟目錄開始找啦
