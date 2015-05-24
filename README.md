@@ -95,3 +95,12 @@ autoload function 請直接使用 PSR-0 的規範，直接貼上即可
 autoloading 機制，原理其實很簡單。在程式產生一個類別實體時，如果找不到類別定義，就會來呼叫使用者定義的 autoloading 函數，把完整的類別名稱當做參數丟給他。
 
 > 2014/10之後，建議使用 PSR-4 取代 PSR-0
+
+## Chapter 12 class inheritance and protected scope
+無須對外界公開的方法都應該設定為 private，才有利於封裝。
+
+封閉性
+private > protected > public
+
+繼承：
+繼承代表一種 "is-a" 的關係。
