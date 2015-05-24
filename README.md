@@ -127,3 +127,13 @@ Using static properties and methods can help you write less verbose code. But be
 例如加入 Accessible 這個 class 有 __set() , __get() 方法
 
 使用方法：`在 class 內`(注意不是在外面喔)使用 `use` 就是使用 `traits`
+
+## Chapter 18 dependency injection
+DI 主要用來解耦合，真正有效的降低模組間耦合的作法
+Address class 接受 不同的 `Repository` 介面注入，例如 `AddressArrayRepository`，且實作 `AddressRepositoryInterface `介面
+
+實作
+原本 AddressArrayRepository 是在 Address 內直接進行實體化(在 __construct 那)，這導致了這兩個 class 產生了耦合，
+
+-
+這個系列看完後建議繼續學習 TutsPlus 的 **Object - Oriented Design in PHP**
