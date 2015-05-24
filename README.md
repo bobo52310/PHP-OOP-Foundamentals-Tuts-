@@ -121,3 +121,9 @@ private > protected > public
 
 ## Chapter 16 statics
 Using static properties and methods can help you write less verbose code. But bear in mind, statics do not behave like true objects(因為static關係，即使你new 2個物件出來，實際上存取的還是同一個物件，這點必須要注意).
+
+## Chapter 17 Traits
+替 class 加入特定的一組方法，讓這些方法可以在不同物件之間 reuse
+例如加入 Accessible 這個 class 有 __set() , __get() 方法
+
+使用方法：`在 class 內`(注意不是在外面喔)使用 `use` 就是使用 `traits`
