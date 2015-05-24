@@ -110,3 +110,11 @@ private > protected > public
 
 ## Chapter 14 abstract classes
 抽象 class 無法被實體化，主要用來繼承用的。
+
+## Chapter 15 interfaces
+* 功能1.介面就像是個合約，定義與規範必須實做那些方法，並且可以實現OOP的重要特色(多形)。
+* 功能2.把相同操作的 class 給解耦合。
+
+`PostJsonRepository`、`PostRssRepository`
+這兩個 class 實作 PostRepository 這個介面，分別可讀入 `Json` 和 `Xml` 檔
+讀入檔案分別使用 file_get_contents() 與 simplexml_load_file() 函數
