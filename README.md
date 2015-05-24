@@ -107,3 +107,6 @@ private > protected > public
 
 ## Chapter 13 overriding parent methods
 父類別的方法可以被子類別覆寫。
+
+## Chapter 14 abstract classes
+抽象 class 無法被實體化，主要用來繼承用的。
