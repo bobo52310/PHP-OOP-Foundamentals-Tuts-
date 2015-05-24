@@ -118,3 +118,6 @@ private > protected > public
 `PostJsonRepository`、`PostRssRepository`
 這兩個 class 實作 PostRepository 這個介面，分別可讀入 `Json` 和 `Xml` 檔
 讀入檔案分別使用 file_get_contents() 與 simplexml_load_file() 函數
+
+## Chapter 16 statics
+Using static properties and methods can help you write less verbose code. But bear in mind, statics do not behave like true objects(因為static關係，即使你new 2個物件出來，實際上存取的還是同一個物件，這點必須要注意).
