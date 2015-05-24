@@ -64,3 +64,6 @@ private 成員，通常習慣在名稱開頭加上一個_(底線)來區別。
 * `__get()`
 * `__toString()`
 魔術方法讓你的物件更神奇，可以關注到特定事件(eg. 物件被建立/刪除時..等) 詳見範例。
+
+## Chapter 09 autoloading through spl
+使用 `spl_autoload_register()` 註冊 load 方法，來達到 autoloading
