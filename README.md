@@ -87,3 +87,11 @@ PHP5.3才加入的功能，最主要的目的是用來組織類別與函數，�
 要使用這些 全域 class、method 可使用 `\` 反斜線開頭，代表這是定義在`global namespace` 中的東西
 
 `\` 白話解釋就是從跟目錄開始找啦
+
+## Chapter 11 autoloading with PSR-0
+autoload function 請直接使用 PSR-0 的規範，直接貼上即可
+這函數其實就是依照 PSR-0 大家約定好的命名方式，來把 Class 的檔名給切出來
+
+autoloading 機制，原理其實很簡單。在程式產生一個類別實體時，如果找不到類別定義，就會來呼叫使用者定義的 autoloading 函數，把完整的類別名稱當做參數丟給他。
+
+> 2014/10之後，建議使用 PSR-4 取代 PSR-0
