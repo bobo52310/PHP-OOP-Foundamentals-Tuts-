@@ -104,3 +104,6 @@ private > protected > public
 
 繼承：
 繼承代表一種 "is-a" 的關係。
+
+## Chapter 13 overriding parent methods
+父類別的方法可以被子類別覆寫。
